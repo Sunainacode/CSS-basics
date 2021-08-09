@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+</head>
+<style>
+    h1{
+        background-color: black;
+        text-align: center;
+        color: deeppink;
+        font-weight: bold;
+    }
+    /* > symbol is used when a direct child is to be formatted */
+    div > p{
+        color: white;
+        background-color: red;
+
+    }
+    /* + symbol is used to format the latter element when the former is just the previous sibling of the latter */
+    div + p{
+        color: rosybrown;
+        background-color: royalblue;
+    }
+    /* To denote the heirarchy of the selector not necessary to be direct child */
+    div li p{
+        color: skyblue;
+        background-color: springgreen;
+    }
+</style>
+<body>
+    <h1>This is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>This is another para inside li</p></li>
+                <li>This will not get affected</li>
+                <p>This is a para inside ul</p>
+            </ul>
+            <p>This is a para</p>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>This is outermost paragraph</p>
+</body>
+</html>

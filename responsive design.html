@@ -1,0 +1,38 @@
+<!-- Notes:
+Responsive design is :
+1. Endless new resolutions and devices are difficult to support separately  for a web developer
+2. Responsive design is a way for a web developer to make his website adapt to all the devices and resolutions
+3. Responsive design is a necessity but not a luxury anymore. -->
+
+<!-- Ways to achieve responsive design:
+1. Setting up the viewport
+2. Use max-width/max-height
+3. Using CSS media queries
+4. Using em/rem/vh/vw units over pixels -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <style>
+        h1,h2,h3{
+            text-align: center;
+        }
+        .container{
+            height:100vh;  /*viewport height*/
+            width: 100vw;  /*viewport width*/
+            border: 3px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="first">First</h1>
+        <h2 id="second">Second</h2>
+        <h3 id="third">Third</h3>
+    </div>
+</body>
+</html>

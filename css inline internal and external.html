@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS inline internal and external</title>
+    
+    <!-- If both Inline and Internal CSS is there, then the inline CSS is preferred over Internal CSS. -->
+    <!-- Internal CSS -->
+    <style>
+        p{
+            color:purple;
+            background-color: burlywood !important;
+        }
+    </style>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="para.css">
+    <!-- Between internal and external CSS, the one which is included later in the html file will be having higher precedence order. Although, if we add !important to the previous CSS file, we can make it more important than the later one. -->
+</head>
+<body>
+    <h3>This is CSS</h3>
+    <!-- Inline CSS -->
+    <!-- <p style="color: red; background-color: aqua;">Everything u need to know about HTML/CSS</p> -->
+    <p>Everything u need to know about HTML/CSS</p>
+</body>
+</html>

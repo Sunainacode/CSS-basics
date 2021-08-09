@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index</title>
+    <!-- z-index works for only positioned elements and not with static(default) elements  -->
+    <!-- z-index works with position: relative, absolute, fixed or sticky only -->
+    <!-- z-index jiska zada hoga wo overlap krega on the box jiska z-index kam hoga  -->
+    <style>
+        .box{
+            width: 170px;
+            height: 170px;
+            z-index: 38;
+            border: 2px solid black;
+        }
+        #box1{
+            position: relative;
+            top: 34px;
+            z-index: -4;
+            background-color: red;
+            /* display: none; */
+            /* display none will hide the element and also remove its empty space  */
+        }
+        #box2{
+            position: relative;
+            top: -68px;
+            background-color: green;
+            /* visibility: hidden; */
+            /* visibility hidden will hide the element but will show its empty space  */
+        }
+        #box3{
+            background-color: yellow;
+        }
+        #box4{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>

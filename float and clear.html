@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and clear</title>
+    <style>
+        *{
+            /* asterisks are used when a certain editing is to be used for all the items */
+            font-family: cursive;
+
+        }
+        .container{
+            width: 900px;
+            border:3px solid rgb(121, 116, 116);
+            margin: auto;
+            /* Center align the container */
+        }
+        .item{
+            border: 3px solid grey;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background: #f5f0f0;
+
+        }
+        #fruits{
+            float: left;
+            width: 48%;
+        }
+        #computer{
+            float: right;
+            width: 48%;
+        }
+        #stationery{
+            /* float: left ; */
+            clear: both;
+            width: 96%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="fruits" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitspara" class="para">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit reiciendis praesentium explicabo nobis quod, eaque quas. Est, ea. Quasi fugit quis praesentium enim quia, sequi nesciunt excepturi reprehenderit atque? Quo.
+            </p>
+        </div>
+        <div id="computer" class="item">
+            <h3>Computer</h3>
+            <p id="computerpara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, qui! Cum autem quisquam ipsum quidem, a sequi nam blanditiis porro consectetur ut? Similique sint suscipit excepturi aspernatur labore et. Voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia dolores recusandae delectus adipisci dolore rem reiciendis est beatae et, quibusdam reprehenderit explicabo eligendi veniam nesciunt! Eveniet perspiciatis laboriosam hic voluptate!
+            </p>
+        </div>
+        <div id="stationery" class="item">
+            <h3>Stationery</h3>
+            <p id="stationerypara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil debitis iure distinctio neque, sequi et sapiente maiores iusto ipsum modi laudantium architecto ratione esse labore ducimus fugit sint autem aut?
+            </p>
+        </div>
+    </div>
+</body>
+</html>
